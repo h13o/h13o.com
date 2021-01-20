@@ -47,7 +47,7 @@ export default function Home({ markdown }) {
             <div className="max-w-xl ">
               <div className="text-3xl mb-4">長谷川林太郎</div>
               <div className="text-l mb-4">
-                札幌生まれ、東京大学工学部システム創成学科卒です。株式会社イザで取締役CTOをしています。毎月100km走っています。
+                札幌生まれ、東京大学工学部システム創成学科卒です。大学の同期と始めた株式会社イザで取締役CTOをしています。毎月100km走っています。
               </div>
               <div className="flex">
                 <div className="flex items-center mr-4">
