@@ -28,8 +28,8 @@ export default function Home({ markdown }) {
         <div className="relative h-screen w-screen">
           <div className="absolute inset-0 ml-auto w-24 h-4">
             <div className="m-4 hover:underline">
-              <Link href="/jp">
-                <a>日本語</a>
+              <Link href="/">
+                <a>English</a>
               </Link>
             </div>
           </div>
@@ -45,11 +45,9 @@ export default function Home({ markdown }) {
               />
             </div>
             <div className="max-w-xl ">
-              <div className="text-3xl mb-4">Rintaro Hasegawa</div>
+              <div className="text-3xl mb-4">長谷川林太郎</div>
               <div className="text-l mb-4">
-                I'm a Software Enginner, and CTO of IZA k.k. in Tokyo. I was
-                born in Sapporo, Japan, and graduated the University of Tokyo in
-                System Engineering. I run 100km every month.
+                札幌生まれ、東京大学工学部システム創成学科卒です。株式会社イザで取締役CTOをしています。毎月100km走っています。
               </div>
               <div className="flex">
                 <div className="flex items-center mr-4">
