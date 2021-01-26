@@ -25,14 +25,14 @@ export default function Home({ markdown }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="relative h-screen w-screen">
-          <div className="absolute inset-0 ml-auto w-24 h-4 z-10">
+        <div className="relative h-screen w-screen bg-gradient-to-b from-indigo-50 to-green-50">
+          {/* <div className="absolute inset-0 ml-auto w-24 h-4 z-10">
             <div className="m-4 hover:underline">
               <Link href="/jp">
                 <a>日本語</a>
               </Link>
             </div>
-          </div>
+          </div> */}
           <div className="absolute inset-0 m-auto w-screen h-screen flex">
             <div className="m-auto flex flex-col md:flex-row items-center">
               <div className="m-4">
@@ -45,14 +45,28 @@ export default function Home({ markdown }) {
                   className="rounded-full"
                 />
               </div>
-              <div className="max-w-xl ml-2">
-                <div className="text-3xl mb-4">Rintaro Hasegawa</div>
+              <div className="max-w-xl mx-8">
+                <div className="text-3xl mb-4 flex sm:flex-row flex-col">
+                  <div className="">
+                    <span className="text-green-500 font-bold">Rin</span>taro
+                    Hasegawa
+                    <span className="mr-4"></span>|
+                  </div>
+                  <div className="">
+                    長谷川
+                    <span className=" text-green-500 font-bold ml-2">林</span>
+                    太郎
+                  </div>
+                </div>
                 <div className="text-l mb-4">
                   I'm a Software Enginner, and CTO of IZA k.k. in Tokyo. I was
                   born in Sapporo, Japan, and graduate the University of Tokyo
                   in System Engineering soon. I run 100km every month.
                 </div>
-                <div className="flex flex-col md:flex-row">
+                <div className="text-l mb-4">
+                  札幌生まれ、東京大学工学部システム創成学科4年です。大学の同期と始めた株式会社イザで取締役CTOをしています。毎月100km走っています。
+                </div>
+                <div className="flex flex-col md:flex-row mb-4">
                   <div className="flex items-center mr-4">
                     <FaGithubAlt />
                     <span className="mr-1" />
@@ -75,6 +89,13 @@ export default function Home({ markdown }) {
                     <span className="mr-1" />
                     <A href="https://twitter.com/_h13o">Twitter</A>
                   </div>
+                </div>
+                <div className="">
+                  <button className="rounded bg-green-500 hover:bg-green-600 text-white p-4 max-w-xs w-full">
+                    <a href="mailto:rintaro.hasegawa@gmail.com">
+                      Contact me here!
+                    </a>
+                  </button>
                 </div>
               </div>
             </div>
