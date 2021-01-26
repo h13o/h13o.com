@@ -49,8 +49,8 @@ export default function Home({ markdown }) {
                 <div className="text-3xl mb-4">Rintaro Hasegawa</div>
                 <div className="text-l mb-4">
                   I'm a Software Enginner, and CTO of IZA k.k. in Tokyo. I was
-                  born in Sapporo, Japan, and graduated the University of Tokyo
-                  in System Engineering. I run 100km every month.
+                  born in Sapporo, Japan, and graduate the University of Tokyo
+                  in System Engineering soon. I run 100km every month.
                 </div>
                 <div className="flex flex-col md:flex-row">
                   <div className="flex items-center mr-4">
