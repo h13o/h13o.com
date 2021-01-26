@@ -25,15 +25,8 @@ export default function Home({ markdown }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="relative h-screen w-screen bg-gradient-to-b from-indigo-50 to-green-50">
-          {/* <div className="absolute inset-0 ml-auto w-24 h-4 z-10">
-            <div className="m-4 hover:underline">
-              <Link href="/jp">
-                <a>日本語</a>
-              </Link>
-            </div>
-          </div> */}
-          <div className="absolute inset-0 m-auto w-screen h-screen flex">
+        <div className="min-h-screen bg-gradient-to-b from-white to-green-50">
+          <div className="flex sm:pt-64 pt-16 pb-16">
             <div className="m-auto flex flex-col md:flex-row items-center">
               <div className="m-4">
                 <Image
@@ -46,7 +39,7 @@ export default function Home({ markdown }) {
                 />
               </div>
               <div className="max-w-xl mx-8">
-                <div className="text-3xl mb-4 flex sm:flex-row flex-col">
+                <div className="text-2xl sm:text-3xl mb-4 flex sm:flex-row flex-col">
                   <div className="">
                     <span className="text-green-500 font-bold">Rin</span>taro
                     Hasegawa
