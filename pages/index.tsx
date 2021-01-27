@@ -21,7 +21,7 @@ export default function Home({ markdown }) {
   return (
     <div>
       <Head>
-        <title>Rintaro Hasegawa</title>
+        <title>Rintaro Hasegawa | 長谷川 林太郎</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
