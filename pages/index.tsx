@@ -29,6 +29,7 @@ export default function Home({ markdown }) {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="thumbnail" content="/me.jpg" />
       </Head>
       <main>
         <div className="min-h-screen bg-gradient-to-b from-white to-green-50">
