@@ -40,7 +40,7 @@ export default function Home({ markdown }) {
               </div>
               <div className="max-w-xl mx-8">
                 <div className="text-2xl sm:text-3xl mb-4 flex sm:flex-row flex-col">
-                  <div className="">
+                  <div className="mr-4">
                     <span className="text-green-500 font-bold">Rin</span>taro
                     Hasegawa
                     <span className="mr-4"></span>|
