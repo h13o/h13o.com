@@ -22,6 +22,12 @@ export default function Home({ markdown }) {
     <div>
       <Head>
         <title>Rintaro Hasegawa | 長谷川 林太郎</title>
+        <meta property="og:title" content="Rintaro Hasegawa | 長谷川 林太郎" />
+        <meta
+          property="og:description"
+          content="Rintaro Hasegawa is a software engineer and CTO of IZA.
+          長谷川林太郎はソフトウェアエンジニアで株式会社イザのCTOです。"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
