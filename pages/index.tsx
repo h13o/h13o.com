@@ -64,7 +64,7 @@ export default function Home({ markdown }) {
                   in System Engineering soon. I run 100km every month.
                 </div>
                 <div className="text-l mb-4">
-                  札幌生まれ、東京大学工学部システム創成学科4年です。大学の同期と始めた株式会社イザで取締役CTOをしています。毎月100km走っています。
+                  札幌生まれ、東京大学工学部システム創成学科4年です。<a href="https://yamada.land" className="underline hover:text-blue-500">大学の同期</a>と始めた株式会社イザで取締役CTOをしています。毎月100km走っています。
                 </div>
                 <div className="flex flex-col md:flex-row mb-4">
                   <div className="flex items-center mr-4">
