@@ -1,23 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
-import fs from "fs";
 import A from "../components/A";
-import H1 from "../components/MarkdownComponent";
 import { FaFacebook, FaGithubAlt, FaTwitter, FaLinkedin } from "react-icons/fa";
 
-import unified from "unified";
-import parse from "remark-parse";
-import remark2react from "remark-react";
-
-export async function getStaticProps(context) {
-  const markdown = fs.readFileSync("./markdown/main.md", "utf8");
-  return {
-    props: { markdown }, // will be passed to the page component as props
-  };
-}
-
-export default function Home({ markdown }) {
+export default function Home() {
   const title = "Rintaro Hasegawa | 長谷川 林太郎";
   const description =
     "Rintaro Hasegawa is a software engineer and CTO of IZA. 長谷川林太郎はソフトウェアエンジニアで株式会社イザのCTOです。";

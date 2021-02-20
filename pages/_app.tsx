@@ -1,4 +1,5 @@
 import 'tailwindcss/tailwind.css';
+import "../styles/prism-dracula.css"
 import { useEffect } from 'react';
 import { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
