@@ -2,8 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import fs from "fs";
-import { A } from "../components/A";
-import { H1 } from "../components/MarkdownComponent";
+import A from "../components/A";
+import H1 from "../components/MarkdownComponent";
 import { FaFacebook, FaGithubAlt, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 import unified from "unified";
