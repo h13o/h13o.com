@@ -1,9 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
-import A from "../components/A";
+import SocialMedia from "../components/SocialMedia";
 import { FaFacebook, FaGithubAlt, FaTwitter, FaLinkedin } from "react-icons/fa";
-import { Post } from "../components/Post";
-import { posts } from "../utils/getAllPosts";
 
 export default function Home() {
   const title = "Rintaro Hasegawa | 長谷川 林太郎";
@@ -58,24 +56,24 @@ export default function Home() {
                   <div className="flex items-center mr-4">
                     <FaGithubAlt />
                     <span className="mr-1" />
-                    <A href="https://github.com/h13o">Github</A>
+                    <SocialMedia href="https://github.com/h13o">Github</SocialMedia>
                   </div>
                   <div className="flex items-center mr-4">
                     <FaLinkedin />
                     <span className="mr-1" />
-                    <A href="https://www.linkedin.com/in/rintaro-hasegawa-b9b465143/">
+                    <SocialMedia href="https://www.linkedin.com/in/rintaro-hasegawa-b9b465143/">
                       Linkedin
-                    </A>
+                    </SocialMedia>
                   </div>
                   <div className="flex items-center mr-4">
                     <FaFacebook />
                     <span className="mr-1" />
-                    <A href="https://www.facebook.com/DOZAEMORIN/">Facebook</A>
+                    <SocialMedia href="https://www.facebook.com/DOZAEMORIN/">Facebook</SocialMedia>
                   </div>
                   <div className="flex items-center">
                     <FaTwitter />
                     <span className="mr-1" />
-                    <A href="https://twitter.com/_h13o">Twitter</A>
+                    <SocialMedia href="https://twitter.com/_h13o">Twitter</SocialMedia>
                   </div>
                 </div>
                 <div className="">
@@ -86,13 +84,6 @@ export default function Home() {
                   </button>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="max-w-screen-md md:mx-auto m-4 pb-16">
-            <div className="flex flex-col">
-              {posts.map((post) => (
-                <Post key={post.link} post={post} />
-              ))}
             </div>
           </div>
         </div>
