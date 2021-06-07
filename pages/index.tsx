@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Header from "../components/Header"
+import Layout from "../components/Layout"
 import SocialMedia from "../components/SocialMedia";
 import { FaFacebook, FaGithubAlt, FaTwitter, FaLinkedin } from "react-icons/fa";
 
@@ -8,7 +9,7 @@ export default function Home() {
     <div>
       <Header />
       <main>
-        <div className="min-h-screen bg-gradient-to-b from-white to-green-50">
+        <Layout>
           <div className="flex sm:pt-64 pt-16 pb-16">
             <div className="m-auto flex flex-col md:flex-row items-center">
               <div className="m-4">
@@ -76,7 +77,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </Layout>
       </main>
     </div>
   );
