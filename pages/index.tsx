@@ -1,22 +1,12 @@
-import Head from "next/head";
 import Image from "next/image";
+import Header from "../components/Header"
 import SocialMedia from "../components/SocialMedia";
 import { FaFacebook, FaGithubAlt, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
-  const title = "Rintaro Hasegawa | 長谷川 林太郎";
-  const description =
-    "Rintaro Hasegawa is a software engineer and CTO of IZA. 長谷川林太郎はソフトウェアエンジニアで株式会社イザのCTOです。";
   return (
     <div>
-      <Head>
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="thumbnail" content="/me.jpg" />
-      </Head>
+      <Header />
       <main>
         <div className="min-h-screen bg-gradient-to-b from-white to-green-50">
           <div className="flex sm:pt-64 pt-16 pb-16">
