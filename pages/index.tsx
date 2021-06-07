@@ -8,7 +8,6 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <main>
         <Layout>
           <div className="flex sm:pt-64 pt-16 pb-16">
             <div className="m-auto flex flex-col md:flex-row items-center">
@@ -78,7 +77,6 @@ export default function Home() {
             </div>
           </div>
         </Layout>
-      </main>
     </div>
   );
 }
