@@ -4,7 +4,6 @@ import Link from 'next/link';
 import Prism from "prismjs";
 import "prismjs/components/prism-jsx.min";
 import "prismjs/plugins/line-highlight/prism-line-highlight.min.js";
-import timeIconString from "../../utils/timeIconString"
 
 const PostLayout = ({ meta, children }) => {
   useEffect(() => {
@@ -22,12 +21,6 @@ const PostLayout = ({ meta, children }) => {
           </div>
           <div className="text-xl">
             <div className="text-3xl font-bold text-green-500">{meta.title}</div>
-            <span className="text-base"
-            >{meta.date}<span className="mx-2" >
-                {timeIconString(meta.readTime)}
-              </span>
-              {meta.readTime + ' min read'}
-            </span>
             <p>{meta.description}</p>
           </div>
           <div className="mt-12 prose prose-md prose-green md:prose-xl max-w-none">
