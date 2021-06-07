@@ -2,6 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import A from "../components/A";
 import { FaFacebook, FaGithubAlt, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { Post } from "../components/Post";
+import { posts } from "../utils/getAllPosts";
 
 export default function Home() {
   const title = "Rintaro Hasegawa | 長谷川 林太郎";
@@ -86,21 +88,14 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className="max-w-screen-md md:mx-auto m-4 pb-16">
+            <div className="flex flex-col">
+              {posts.map((post) => (
+                <Post key={post.link} post={post} />
+              ))}
+            </div>
+          </div>
         </div>
-        {/* <div id="preview">
-              {
-                unified()
-                  .use(parse)
-                  .use(remark2react, {
-                    remarkReactComponents: {
-                      // Use CustomLink instead of <a>
-                      a: A,
-                      h1: H1,
-                    },
-                  })
-                  .processSync(markdown).result
-              }
-            </div> */}
       </main>
     </div>
   );

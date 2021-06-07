@@ -1,9 +1,24 @@
-import PostLayout from "../../components/layouts/PostLayout"
+import PostLayout from "../../../components/layouts/PostLayout"
 
 export const meta = {
-  title: "A Complete Guide to useEffect",
-  date: '2019-03-09'
+  title: "Share Commitizen Rules Among Team",
+  description: 'Keep your teams commit consistent.',
+  date: '2021-02-22',
+  readTime: 3 
 }
+
+export default ({ children }) => (
+  <PostLayout meta={meta}>
+    {children}
+  </PostLayout>
+)
+
+Sometimes, you'll find your commit messages are only `update` and `fix`, but difficult to understand git logs later. Working as a team, this is more stressful issues.
+
+[Commitizen](https://github.com/commitizen/cz-cli) helps you to write git commits with **consistent rules**.
+
+In this post, I'll tell you how to share commitizen settings among your teams.
+
 
 You wrote a few components with [Hooks](https://reactjs.org/docs/hooks-intro.html). Maybe even a small app. You’re mostly satisfied. You’re comfortable with the API and picked up a few tricks along the way. You even made some [custom Hooks](https://reactjs.org/docs/hooks-custom.html) to extract repetitive logic (300 lines gone!) and showed it off to your colleagues. “Great job”, they said.
 
@@ -1672,9 +1687,3 @@ As Suspense gradually covers more data fetching use cases, I anticipate that `us
 Now that you know pretty much everything I know about using effects, check out the [TLDR](#tldr) in the beginning. Does it make sense? Did I miss something? (I haven’t run out of paper yet!)
 
 I’d love to hear from you on Twitter! Thanks for reading.
-
-export default ({ children }) => (
-  <PostLayout meta={meta}>
-    {children}
-  </PostLayout>
-)
