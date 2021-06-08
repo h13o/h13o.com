@@ -5,20 +5,24 @@ import markdownToHtml from "../../../lib/markdownToHtml"
 
 export default function Post({ data, htmlContent }) {
     console.log(data.title)
+    const Back = () => (
+        <Link href="/">
+            <div className="my-4 underline cursor-pointer">
+                Back
+                    </div>
+        </Link>
+    )
     return (
         <Layout>
-            <div className="p-8 max-w-screen-md md:mx-auto">
-                <Link href="/">
-                    <div className="my-4 underline cursor-pointer">
-                        Go to Top / 戻る
-                    </div>
-                </Link>
+            <div className="p-8 ">
+                <Back />
                 <div className="my-8 font-bold text-3xl text-gray-900">
                     {data.title}
                 </div>
                 <div className="prose"
                     dangerouslySetInnerHTML={{ __html: htmlContent }}
                 />
+                <Back />
             </div>
         </Layout>)
 }
