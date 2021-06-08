@@ -8,7 +8,7 @@ export default function Post({ htmlContent }) {
         <Layout>
             <div className="p-8 max-w-screen-md md:mx-auto">
                 <Link href="/">
-                    <div className="my-4 underline">
+                    <div className="my-4 underline cursor-pointer">
                         Go to Top / 戻る
                     </div>
                 </Link>
