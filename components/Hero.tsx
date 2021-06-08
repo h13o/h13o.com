@@ -5,7 +5,7 @@ export default function Hero() {
     return (
         <div className="flex sm:pt-64 pt-16 pb-16">
             <div className="m-auto flex flex-col md:flex-row items-center">
-                <div className="m-4">
+                <div className="m-6">
                     <Image
                         src="/me.jpg"
                         alt="my pic"
@@ -15,7 +15,7 @@ export default function Hero() {
                         className="rounded-full"
                     />
                 </div>
-                <div className="max-w-xl mx-8">
+                <div className="max-w-xl">
                     <div className="text-2xl sm:text-3xl mb-4 flex sm:flex-row flex-col">
                         <div className="mr-4">
                             <span className="text-green-500 font-bold">Rin</span>taro
