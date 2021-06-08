@@ -11,7 +11,7 @@ export default function ShuhoList({ data }) {
                 </div>
             </div>
             {
-                data.map(
+                data.reverse().map(
                     article => (
                         article.data.title &&
                         <div key={article.data.title} className="mb-4">
