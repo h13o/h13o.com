@@ -1,0 +1,3 @@
+[submodule "shuho"]
+	path = shuho
+	url = https://github.com/h13o/shuho.git
