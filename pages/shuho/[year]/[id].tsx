@@ -5,7 +5,6 @@ import { getAllShuhoIds, getShuhoData } from '../../../lib/shuho'
 import markdownToHtml from "../../../lib/markdownToHtml"
 
 export default function Post({ data, htmlContent }) {
-    console.log(data.title)
     const Back = () => (
         <Link href="/">
             <div className="my-4 underline cursor-pointer">

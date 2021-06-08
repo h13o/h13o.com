@@ -1,6 +1,5 @@
 import Link from "next/link";
 export default function ShuhoList({ data }) {
-    console.log(data);
     return (
         <div className="pb-16">
             <div className="mb-8">

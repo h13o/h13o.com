@@ -49,7 +49,6 @@ export const getAllShuhoData = () => {
 
 export const getShuhoData = (params) => {
     const m = moment(params.year + params.id, "YYYYMM-DD");
-    console.log(m)
     const fullPath = "./shuho/" + params.year + "/" + params.id + ".md"
     const fileContents = fs.readFileSync(fullPath, 'utf8')
     const { data, content } = matter(fileContents)
