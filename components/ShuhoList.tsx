@@ -14,7 +14,7 @@ export default function ShuhoList({ data }) {
                 data.map(
                     article => (
                         article.data.title &&
-                        <div>
+                        <div key={article.data.title}>
                             <div className="text-gray-900 font-light mb-1">
                                 {article.start + "~" + article.end}
                             </div>
