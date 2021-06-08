@@ -5,9 +5,11 @@ import markdownToHtml from "../../../lib/markdownToHtml"
 export default function Post({ htmlContent }) {
     return (
         <Layout>
-            <div
-                dangerouslySetInnerHTML={{ __html: htmlContent }}
-            />
+            <div className="p-8 max-w-screen-md md:mx-auto">
+                <div className="prose"
+                    dangerouslySetInnerHTML={{ __html: htmlContent }}
+                />
+            </div>
         </Layout>)
 }
 
