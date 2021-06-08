@@ -7,7 +7,10 @@ import { getAllShuhoData } from "../lib/shuho"
 export default function Home({ shuhoData }) {
   return (
     <>
-      <Header />
+      <Header
+        title="Rintaro Hasegawa | 長谷川 林太郎"
+        description="Rintaro Hasegawa is a software engineer and CTO of IZA. 長谷川林太郎はソフトウェアエンジニアで株式会社イザのCTOです。"
+      />
       <Layout>
         <Hero />
         <ShuhoList data={shuhoData} />
