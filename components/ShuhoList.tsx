@@ -19,10 +19,17 @@ export default function ShuhoList({ data }) {
                                 {article.start + "~" + article.end}
                             </div>
                             <Link href={article.url}>
-                                <div className="cursor-pointer text-2xl text-gray-900 hover:underline">
+                                <div className="cursor-pointer text-2xl text-gray-900 hover:underline mb-1">
                                     {article.data.title}
                                 </div>
                             </Link>
+                            <ul className="list-disc list-inside">
+                                {article.topics.map(topic =>
+                                    <li>
+                                        {topic}
+                                    </li>
+                                )}
+                            </ul>
                         </div>
                     ))
             }

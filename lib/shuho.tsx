@@ -52,9 +52,15 @@ export const getShuhoData = (params) => {
     const fullPath = "./shuho/" + params.year + "/" + params.id + ".md"
     const fileContents = fs.readFileSync(fullPath, 'utf8')
     const { data, content } = matter(fileContents)
+    const topics = content
+        .toString()
+        .match(/^###\s.*$/gm)
+        .map((s) => s.replace(/^###\s*/, ''))
+    console.log(topics);
     return {
         data,
         content,
+        topics,
         start: m.startOf('isoWeek').format("M/D"),
         end: m.endOf('isoWeek').format("M/D"),
         url: fullPath.substr(2).replace(".md", "")
