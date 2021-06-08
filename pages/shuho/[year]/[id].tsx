@@ -1,3 +1,4 @@
+import Link from "next/link"
 import Layout from '../../../components/Layout'
 import { getAllShuhoIds, getShuhoData } from '../../../lib/shuho'
 import markdownToHtml from "../../../lib/markdownToHtml"
@@ -6,6 +7,11 @@ export default function Post({ htmlContent }) {
     return (
         <Layout>
             <div className="p-8 max-w-screen-md md:mx-auto">
+                <Link href="/">
+                    <div className="my-4 underline">
+                        Go to Top / 戻る
+                    </div>
+                </Link>
                 <div className="prose"
                     dangerouslySetInnerHTML={{ __html: htmlContent }}
                 />
