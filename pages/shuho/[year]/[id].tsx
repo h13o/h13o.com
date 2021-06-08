@@ -3,6 +3,8 @@ import Layout from '../../../components/Layout'
 import Header from "../../../components/Header"
 import { getAllShuhoIds, getShuhoData } from '../../../lib/shuho'
 import markdownToHtml from "../../../lib/markdownToHtml"
+import InnerHTML from 'dangerously-set-html-content'
+
 
 export default function Post({ data, htmlContent }) {
     const Back = () => (
@@ -24,9 +26,7 @@ export default function Post({ data, htmlContent }) {
                     <div className="my-8 font-bold text-3xl text-gray-900">
                         {data.title}
                     </div>
-                    <div className="prose"
-                        dangerouslySetInnerHTML={{ __html: htmlContent }}
-                    />
+                    <InnerHTML className="prose" html={htmlContent} />
                     <Back />
                 </div>
             </Layout>
