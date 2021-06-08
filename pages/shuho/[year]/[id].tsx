@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Layout from '../../../components/Layout'
+import Header from "../../../components/Header"
 import { getAllShuhoIds, getShuhoData } from '../../../lib/shuho'
 import markdownToHtml from "../../../lib/markdownToHtml"
 
@@ -9,22 +10,29 @@ export default function Post({ data, htmlContent }) {
         <Link href="/">
             <div className="my-4 underline cursor-pointer">
                 Back
-                    </div>
+            </div>
         </Link>
     )
     return (
-        <Layout>
-            <div className="p-8 ">
-                <Back />
-                <div className="my-8 font-bold text-3xl text-gray-900">
-                    {data.title}
+        <div>
+            <Header
+                title={data.title}
+                description={data.title}
+            />
+            <Layout>
+                <div className="p-8 ">
+                    <Back />
+                    <div className="my-8 font-bold text-3xl text-gray-900">
+                        {data.title}
+                    </div>
+                    <div className="prose"
+                        dangerouslySetInnerHTML={{ __html: htmlContent }}
+                    />
+                    <Back />
                 </div>
-                <div className="prose"
-                    dangerouslySetInnerHTML={{ __html: htmlContent }}
-                />
-                <Back />
-            </div>
-        </Layout>)
+            </Layout>
+        </div>
+    )
 }
 
 export async function getStaticPaths() {
