@@ -25,7 +25,7 @@ export default function ShuhoList({ data }) {
                             </Link>
                             <ul>
                                 {article.topics.map(topic =>
-                                    <li key={topic} className="mb-0.5">
+                                    <li key={topic} className="text-gray-800 text-lg">
                                         {topic}
                                     </li>
                                 )}
