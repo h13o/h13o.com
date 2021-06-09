@@ -14,12 +14,12 @@ export default function ShuhoList({ data }) {
                 data.map(
                     article => (
                         article.data.title &&
-                        <div key={article.data.title} className="mb-4">
-                            <div className="text-gray-900 font-light mb-1">
+                        <div key={article.data.title} className="mb-8">
+                            <div className="text-gray-900 font-light">
                                 {article.start + "~" + article.end}
                             </div>
                             <Link href={article.url}>
-                                <div className="cursor-pointer text-2xl text-gray-900 hover:underline mb-1">
+                                <div className="cursor-pointer text-2xl font-bold text-green-600 hover:text-green-500 mb-1">
                                     {article.data.title}
                                 </div>
                             </Link>
