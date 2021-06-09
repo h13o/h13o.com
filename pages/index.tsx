@@ -12,8 +12,10 @@ export default function Home({ shuhoData }) {
         description="Rintaro Hasegawa is a software engineer and CTO of IZA. 長谷川林太郎はソフトウェアエンジニアで株式会社イザのCTOです。"
       />
       <Layout>
-        <Hero />
-        <ShuhoList data={shuhoData} />
+        <div className="p-8">
+          <Hero />
+          <ShuhoList data={shuhoData} />
+        </div>
       </Layout>
     </>
   );
