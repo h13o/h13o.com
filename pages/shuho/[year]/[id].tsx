@@ -21,14 +21,12 @@ export default function Post({ data, htmlContent }) {
                 description={data.title}
             />
             <Layout>
-                <div className="p-8 ">
-                    <Back />
-                    <div className="my-8 font-bold text-3xl text-gray-900">
-                        {data.title}
-                    </div>
-                    <InnerHTML className="prose" html={htmlContent} />
-                    <Back />
+                <Back />
+                <div className="my-8 font-bold text-3xl text-gray-900">
+                    {data.title}
                 </div>
+                <InnerHTML className="prose" html={htmlContent} />
+                <Back />
             </Layout>
         </div>
     )
