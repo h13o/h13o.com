@@ -6,7 +6,7 @@ import markdownToHtml from "../../../lib/markdownToHtml"
 import InnerHTML from 'dangerously-set-html-content'
 
 
-export default function Post({ data, htmlContent }) {
+export default function Post({ shuhoData, htmlContent }) {
     const Back = () => (
         <Link href="/">
             <div className="my-4 underline cursor-pointer">
@@ -17,13 +17,13 @@ export default function Post({ data, htmlContent }) {
     return (
         <div>
             <Header
-                title={data.title}
-                description={data.title}
+                title={shuhoData.data.title}
+                description={shuhoData.topics.reduce((a, b) => a + ", " + b)}
             />
             <Layout>
                 <Back />
                 <div className="my-8 font-bold text-3xl text-gray-900">
-                    {data.title}
+                    {shuhoData.data.title}
                 </div>
                 <InnerHTML className="prose" html={htmlContent} />
                 <Back />
@@ -45,7 +45,7 @@ export async function getStaticProps({ params }) {
     const htmlContent = await markdownToHtml(shuhoData.content)
     return {
         props: {
-            data: shuhoData.data,
+            shuhoData,
             htmlContent
         }
     }
