@@ -44,7 +44,7 @@ const getYearShuhoData = (year: string) => {
     }
 }
 export const getAllShuhoData = () => {
-    return years.flatMap(year => getYearShuhoData(year));
+    return years.flatMap(year => getYearShuhoData(year)).reverse();
 }
 
 export const getShuhoData = (params) => {
