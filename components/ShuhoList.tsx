@@ -23,9 +23,9 @@ export default function ShuhoList({ data }) {
                                     {article.data.title}
                                 </div>
                             </Link>
-                            <ul className="list-disc list-inside">
+                            <ul>
                                 {article.topics.map(topic =>
-                                    <li key={topic}>
+                                    <li key={topic} className="mb-0.5">
                                         {topic}
                                     </li>
                                 )}
