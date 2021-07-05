@@ -1,6 +1,7 @@
-import Head from "next/head";
+import Head from 'next/head';
+
 export default function Header(
-  { title, description }
+  { title, description, noindex = false },
 
 ) {
   return (
@@ -11,6 +12,8 @@ export default function Header(
       <meta property="og:description" content={description} />
       <link rel="icon" href="/favicon.ico" />
       <meta name="thumbnail" content="/me.jpg" />
+      {noindex
+      && <meta name="robots" content="noindex" />}
     </Head>
-  )
+  );
 }
